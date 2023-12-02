@@ -33,6 +33,12 @@ Equipped with this new information, you now need to find the real first and last
 """
 
 def read_input():
+    """
+    Read the input file and return a list of lines.
+
+    Returns:
+        list: A list of strings representing each line in the input file.
+    """
     lines: [str] = []
     with open('./data/day_1-data.txt', 'r') as f:
         lines = f.readlines()

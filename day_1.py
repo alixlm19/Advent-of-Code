@@ -140,5 +140,7 @@ def get_calibration_value(lines: [str], include_cardinal_digits = False):
 if __name__ == "__main__":
     lines = read_input()
 
+    # Part 1
     assert get_calibration_value(lines) == 54304
+    # Part 2
     assert get_calibration_value(lines, include_cardinal_digits=True) == 54418

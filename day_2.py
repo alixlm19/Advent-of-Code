@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from math import prod
+from utils import utils
 
 @dataclass
 class BallDraw:
@@ -34,28 +35,6 @@ class BallDraw:
                 self.num_green += num
             case "blue":
                 self.num_blue += num
-
-
-def read_lines(test=False) -> [dict]:
-    """
-    Read lines from a file and parse them into a list of dictionaries.
-
-    Args:
-        test (bool): Flag indicating whether to use test data file.
-
-    Returns:
-        list: A list of dictionaries representing the parsed lines.
-    """
-    filename: str = "./data/day_2-data.txt"
-    if test:
-        filename = "./data/day_2-data-test.txt"
-
-    lines: [dict] = []
-    with open(filename, "r") as f:
-        lines = list(map(parse_line, f.readlines()))
-
-    return lines
-
 
 def parse_line(string: str) -> dict:
     """
@@ -137,6 +116,6 @@ def get_games_checksum_and_power(
 
 
 if __name__ == "__main__":
-    games: [dict] = read_lines()
+    games: [dict] = utils.read_lines()
 
     get_games_checksum_and_power(games, 12, 13, 14)

@@ -31,19 +31,7 @@ Your calculation isn't quite right. It looks like some of the digits are actuall
 
 Equipped with this new information, you now need to find the real first and last digit on each line. For example:
 """
-
-def read_input():
-    """
-    Read the input file and return a list of lines.
-
-    Returns:
-        list: A list of strings representing each line in the input file.
-    """
-    lines: [str] = []
-    with open('./data/day_1-data.txt', 'r') as f:
-        lines = f.readlines()
-
-    return lines
+from utils import utils
 
 def get_first_matching_digit(
         string: str,
@@ -138,7 +126,7 @@ def get_calibration_value(lines: [str], include_cardinal_digits = False):
     return sum_
 
 if __name__ == "__main__":
-    lines = read_input()
+    lines: [str] = utils.read_lines()
 
     # Part 1
     assert get_calibration_value(lines) == 54304

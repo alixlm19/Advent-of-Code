@@ -97,7 +97,6 @@ What is the lowest location number that corresponds to any of the initial seed n
 
 from utils import utils
 
-
 class SourceMap:
     def __init__(
         self,
@@ -338,7 +337,6 @@ class SourceMap:
             str: The string representation of the SourceMap object.
         """
         return self.__repr__()
-
 
 def parse_lines(lines: [str]) -> [int, SourceMap]:
     """

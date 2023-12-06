@@ -4,5 +4,5 @@ def read_lines(file_name: str, data_dir_path: str = "./data", test = False):
     
     lines: [str] = []
     with open(file_path, 'r') as f:
-        lines = [line.removesuffix('\n') for line in f.readlines()]
+        lines = [line.removesuffix('\n').strip() for line in f.readlines()]
     return lines

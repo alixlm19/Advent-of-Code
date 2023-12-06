@@ -1,0 +1,12 @@
+# Advent of Code 2023 🎄
+
+This repository contains my solutions to the [Advent of Code 2023](https://adventofcode.com/2023) challenges.
+
+## Challenges completed:
+- 🎅 [Day 1: Trebuchet?!](https://adventofcode.com/2023/day/1)
+- 🎅 [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2)
+- 🎅 [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3)
+- 🎅 [Day 4: Scratchcards](https://adventofcode.com/2023/day/4)
+- 🎅 [Day 5: If You Give A Seed A Fertilizer](https://adventofcode.com/2023/day/5)
+
+
